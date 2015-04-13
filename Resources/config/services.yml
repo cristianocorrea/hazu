@@ -1,0 +1,7 @@
+services:
+    Hazu.Serializer:
+        class:     CCS\HazuServiceBundle\Service\SerializerService
+        arguments: ["@service_container"]
+    Hazu.Service:
+        class:     CCS\HazuServiceBundle\Service\HazuService
+        arguments: ["@service_container"]
