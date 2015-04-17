@@ -26,5 +26,5 @@
         "psr-0": { " CCS\\HazuServiceBundle": "" }
     },
     "minimum-stability": "dev",
-    "target-dir": "CCS/HazuServiceBundle",
+    "target-dir": "CCS/HazuServiceBundle"
 }
