@@ -1,9 +1,9 @@
 <?php
 
-namespace CCS\HazuServiceBundle\Controller;
+namespace CCS\HazuBundle\Controller;
 
-use CCS\HazuServiceBundle\Response as HazuServiceResponse;
-use CCS\HazuServiceBundle\Exception\Exception as HazuServiceException;
+use CCS\HazuBundle\Response as HazuResponse;
+use CCS\HazuBundle\Exception\Exception as HazuException;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -19,7 +19,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 
 /**
  * Class KernelController
- * @package CCS\HazuServiceBundle\Controller
+ * @package CCS\HazuBundle\Controller
  */
 class KernelController extends Controller
 {
@@ -60,11 +60,11 @@ class KernelController extends Controller
             }
 
         } catch (ServiceNotFoundException $e) {
-            $rService = new HazuServiceException($e->getMessage());
+            $rService = new HazuException($e->getMessage());
             $response->setStatusCode(500);
 
         } catch (\Exception $e) {
-            $rService = new HazuServiceException($e->getMessage());
+            $rService = new HazuException($e->getMessage());
             $response->setStatusCode(500);
         } finally {
             $serializer = SerializerBuilder::create()->build();

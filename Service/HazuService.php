@@ -1,10 +1,10 @@
 <?php
 
-namespace CCS\HazuServiceBundle\Service;
+namespace CCS\HazuBundle\Service;
 
-use CCS\HazuServiceBundle\Response;
-use CCS\HazuServiceBundle\Exception;
-use CCS\HazuServiceBundle\Implementation\Entity as Entity;
+use CCS\HazuBundle\Response;
+use CCS\HazuBundle\Exception;
+use CCS\HazuBundle\Implementation\Entity as Entity;
 
 class HazuService
 {

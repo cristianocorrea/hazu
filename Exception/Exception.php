@@ -1,6 +1,6 @@
 <?php
 
-namespace CCS\HazuServiceBundle\Exception;
+namespace CCS\HazuBundle\Exception;
 
 
 class Exception

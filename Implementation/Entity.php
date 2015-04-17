@@ -1,10 +1,10 @@
 <?php
 
-namespace CCS\HazuServiceBundle\Implementation;
+namespace CCS\HazuBundle\Implementation;
 
 /**
  * Class EntityService
- * @package CCS\HazuServiceBundle\Implementation
+ * @package CCS\HazuBundle\Implementation
  */
 class Entity
 {
@@ -117,10 +117,10 @@ class Entity
                         $whereParameters[$count] =  $value;
                         ++$count;
                     } else {
-                        throw new  \Exception("Operator: {$operator} not allowed. Use \$AQO to allow");
+                        throw new  \Exception("Operator: {$operator} not allowed. Use paramter \$AQO to allow");
                     }
                 } else {
-                    throw new  \Exception(" Field: {$field} not allowed. Use \$AQF to allow");
+                    throw new  \Exception(" Field: {$field} not allowed. Use paramter \$AQF to allow");
                 }
             }
         }

@@ -1,8 +1,8 @@
-var HazuService = angular.module('Hazu',[]);
+var Hazu = angular.module('Hazu',[]);
 
 
 //TODO: implementar suporte a interceptors
-HazuService.provider('$hazuService', {
+Hazu.provider('$hazuService', {
     
     //'_interceptors': {},
     '_httpConf': {'headers': {'Content-Type': 'application/json'}},

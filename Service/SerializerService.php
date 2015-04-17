@@ -1,6 +1,6 @@
 <?php
 
-namespace CCS\HazuServiceBundle\Service;
+namespace CCS\HazuBundle\Service;
 
 use JMS\Serializer;
 
